@@ -1,0 +1,20 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "chain": "npx hardhat node",
+    "test:hardhat": "npx hardhat --show-stack-traces --network hardhat test",
+    "test": "npx hardhat test",
+    "deploy:sepolia": "npx hardhat --typecheck run --network sepolia scripts/deploy.ts",
+    "generate:abi": "node generate-abi.js",
+    "coverage": "npx hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^2.0.0",
+    "hardhat": "^2.21.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
